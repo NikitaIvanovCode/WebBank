@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/adaptive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Web-Bank</title>
+</head>
+
+<body>
+    <div class="main-wrapp">
+        <header class="header">
+            <div class="header__wrapp">
+                <div class="header__content">
+                    <div class="header__title"><a href="main.html">Интернет-банк</a></div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu__item menu_home"><a href="main.html">Главная</a></li>
+                            <li class="menu__item menu_payments"><a href="payments.html">Платежи</a></li>
+                            <li class="menu__item menu_transfer"><a href="transfer.html">Перевод</a></li>
+                            <li class="menu__item menu_hystory"><a href="hystory.html">История</a></li>
+                            <li class="menu__item"><a href="../index.html" id="exit">Выход</a></li>
+                        </ul>
+                        <img class="menu-icon" src="../images/menu.svg" alt="menu icon">
+                        <ul class="menu__adaptive">
+                            <li class="menu__item menu_home"><a href="main.html">Главная</a></li>
+                            <li class="menu__item menu_payments"><a href="payments.html">Платежи</a></li>
+                            <li class="menu__item menu_transfer"><a href="transfer.html">Перевод</a></li>
+                            <li class="menu__item menu_hystory"><a href="hystory.html">История</a></li>
+                            <li class="menu__item"><a href="../index.html" id="exit">Выход</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="person_block">
+                <div class="wrapp">
+                    <div class="info">
+                        <div class="block">
+                            <ul>
+                                <li class="name person__list-item"></li>
+                                <li class="card person__list-item"></li>
+                                <li class="date person__list-item">Срок действия: <span></span></li>
+                                <li class="amount person__list-item">На счету: <span></span></li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <div class="rate">Курс валюты</div>
+                            <hr>
+                            <div class="rate">EUR: <span class="eur"></span></div>
+                            <div class="rate">USD: <span class="usd"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">Интернет-банк 2020</div>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

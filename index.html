@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login container">
+        <div class="title">Интернет-банк</div>
+        <form>
+            <div>Логин</div>
+            <input class="login__login-inp input" type="text">
+            <div>Пароль</div>
+            <input class="login__pass-inp input" type="password">
+            <div class="login__warning"></div>
+            <div class="login__to-reg">Регистрация</div>
+            <button class="login__btn btn" type="submit">ВОЙТИ</button>
+        </form>
+    </div>
+
+    <div class="registration container">
+        <div class="title">Интернет-банк</div>
+        <form>
+            <div>
+                <div>Номер карты</div>
+                <input class="registration__cart-numb input" type="text" maxLength="16"
+                    placeholder="0000 0000 0000 0000">
+            </div>
+            <div>
+                <div>Срок действия карты</div>
+                <div class="registration__date">
+                    <input class="registration__date-month" type="text" placeholder="01" maxlength="2">
+                    <span>/</span>
+                    <input class="registration__date-year" type="text" placeholder="21" maxlength="2">
+                </div>
+            </div>
+            <div>
+                <div>Номер телефона</div>
+                <input class="registration__tel input" type="tel" placeholder="+7 901 234 56 78">
+            </div>
+            <div>
+                <div>Логин</div>
+                <input class="registration__new-login input" type="text">
+            </div>
+            <div>
+                <div>Пароль</div>
+                <input class="registration__new-pass input" type="password" placeholder="Не менее 6-и символов">
+                <div class="pass-warning"></div>
+            </div>
+            <div>
+                <div>Повторите пароль</div>
+                <input class="registration__new-pass-replay input" type="password">
+            </div>
+            <div>
+                <div class="for-data">Данные для массива</div>
+                <div>Имя</div>
+                <input class="name input" type="text" placeholder="Виктор Петрович М.">
+            </div>
+            <div>
+                <div>Категория карты</div>
+                <input class="category-cart input" type="text" placeholder="Visa">
+            </div>
+            <div>
+                <div>Сумма на счету</div>
+                <input class="amount input" type="number" placeholder="100">
+            </div>
+
+            <div class="registration__consent">
+                <div class="checkbox"></div>
+                <label class="consent-text" for="checkbox">согласие на обработку данных</label>
+            </div>
+            <div class="registration__warning"></div>
+            <div class="registration__back">Назад</div>
+            <button class="registration__btn btn" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/signin.js"></script>
+
+</body>
+
+</html>
